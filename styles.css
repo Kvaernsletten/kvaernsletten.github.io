@@ -1,0 +1,27 @@
+.darkMode{
+    background-color:rgb(13, 13, 58);
+    color: rgb(149, 151, 28);
+}
+
+.lightMode{
+    background-color: white;
+    color: black;
+}
+
+
+#portrait{
+    margin: auto;
+    border: 30px solid black;
+    display: flex;
+}
+
+#hobbylist{
+    font-size: larger;
+}
+
+.contents{
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
