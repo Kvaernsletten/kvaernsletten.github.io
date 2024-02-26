@@ -1,28 +1,118 @@
-.darkMode{
-    background-color:rgb(13, 13, 58);
-    color: rgb(149, 151, 28);
-}
-
-.lightMode{
-    background-color: white;
-    color: black;
-}
-
-
-#portrait{
-    margin: auto;
-    border: 30px solid black;
+html{
     display: flex;
-}
-
-#hobbylist{
-    margin: auto;
-    font-size: larger;
-}
-
-.contents{
-
     justify-content: center;
+    background-color: rgb(52, 37, 58);
+    user-select: none;
+}
+.player{
+    width: 768px;
+    height: 467px;
+    image-rendering: pixelated;
+}
+.gameScreen{
+    width: 1024px;
+    height: 640px;
+    border: 5px solid rgb(211, 134, 45);
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+.battleScreen{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.battleInfo_container{
+    width: 1024px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid rgb(211, 134, 45);
+    color: rgb(233, 155, 66);
+    background-color: rgb(59, 41, 66);
+    font-weight: 600;
+    border-top: none;
+}
+.playerInfo{
+    padding: 5%;
+    width: 25%;
+}
+.enemyInfo{
+    padding: 5%;
+    width: 25%;
+    opacity: 0;         /*    remove this?  */
+}
+.worldActions{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.worldActions > button{
+    width: 60%;
+    height: 120%;
+    padding: 5%;
+    font-weight: 600;
+    border: 5px solid rgb(30, 20, 34);
+    background-color: rgb(106, 81, 117);
+    color: rgb(211, 134, 45);
+    cursor: pointer;
+}
+.adventureInfo{
+    width: 25%;
+    padding: 5%;
+}
+.worldInfo_container{
+    width: 1024px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid rgb(211, 134, 45);
+    color: rgb(233, 155, 66);
+    background-color: rgb(75, 51, 85);
+    font-weight: 600;
+    border-top: none;
+}
+
+.UpDiv{
+    display: flex;
+    justify-content: center;
+    height: 33.3%;
+}
+.LeftRightDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 33.3%;
+}
+.DownDiv{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 33.3%;
+}
+.upButton{
+    height: 30%;
+    width: 10%;
+    opacity: 50%;
+    cursor: pointer;
+}
+.leftButton{
+    height: 50%;
+    width: 6%;
+    opacity: 50%;
+    cursor: pointer;
+}
+.rightButton{
+    height: 50%;
+    width: 6%;
+    opacity: 50%;
+    cursor: pointer;
+}
+.downButton{
+    height: 30%;
+    width: 10%;
+    opacity: 50%;
+    cursor: pointer;
 }
